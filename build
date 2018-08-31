@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+set -x
+cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+dmd -od=obj -of=bin/bud -Isrc -i src/bud/main.d
